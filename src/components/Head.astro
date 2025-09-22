@@ -7,6 +7,7 @@ import wenkai300 from "@fontsource/lxgw-wenkai/files/lxgw-wenkai-latin-300-norma
 import wenkai500 from "@fontsource/lxgw-wenkai/files/lxgw-wenkai-latin-500-normal.woff2";
 import wenkai700 from "@fontsource/lxgw-wenkai/files/lxgw-wenkai-latin-700-normal.woff2";
 
+import { ClientRouter } from "astro:transitions";
 import { SITE } from "@consts";
 
 interface Props {
@@ -65,6 +66,8 @@ const { title, description, image = "/nano.png" } = Astro.props;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
+<ClientRouter />
+
 <!-- RSS Link -->
 <link
   rel="alternate"
@@ -72,6 +75,17 @@ const { title, description, image = "/nano.png" } = Astro.props;
   title={SITE.NAME}
   href={new URL("rss.xml", Astro.site)}
 />
+
+<script>
+  import type { TransitionBeforeSwapEvent } from "astro:transitions/client";
+  document.addEventListener("astro:before-swap", (e) =>
+    [
+      ...(e as TransitionBeforeSwapEvent).newDocument.head.querySelectorAll(
+        "link[as=\"font\"]"
+      ),
+    ].forEach((link) => link.remove())
+  );
+</script>
 
 <script is:inline>
   function init() {
@@ -179,5 +193,6 @@ const { title, description, image = "/nano.png" } = Astro.props;
   }
 
   document.addEventListener("DOMContentLoaded", () => init());
+  document.addEventListener("astro:after-swap", () => init());
   preloadTheme();
 </script>
