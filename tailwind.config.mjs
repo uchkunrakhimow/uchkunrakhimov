@@ -1,3 +1,5 @@
+import defaultTheme from "tailwindcss/defaultTheme";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
@@ -7,8 +9,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["\"LXGW WenKai\"", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Cantarell", "Helvetica Neue", "Arial", "sans-serif"],
-        serif: ["\"LXGW WenKai\"", "ui-serif", "Georgia", "Cambria", "Times New Roman", "Times", "serif"],
+        sans: ["LXGW WenKai", ...defaultTheme.fontFamily.sans],
+        serif: ["LXGW WenKai", ...defaultTheme.fontFamily.serif],
       },
     },
   },
