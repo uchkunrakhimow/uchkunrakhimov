@@ -13,11 +13,11 @@ html.dark {
 
 html,
 body {
+  font-family: "LXGW WenKai", sans-serif !important;
   @apply size-full;
 }
 
 body {
-  @apply font-sans antialiased;
   @apply flex flex-col;
   @apply bg-stone-100 dark:bg-stone-900;
   @apply text-black/50 dark:text-white/75;
@@ -38,9 +38,13 @@ footer {
 }
 
 article {
-  @apply max-w-full prose dark:prose-invert prose-img:mx-auto prose-img:my-auto;
-  @apply prose-headings:font-semibold prose-p:font-serif;
+  @apply font-sans max-w-full prose dark:prose-invert prose-img:mx-auto prose-img:my-auto;
+  @apply prose-headings:font-semibold prose-headings:font-sans prose-p:font-sans;
   @apply prose-headings:text-black prose-headings:dark:text-white;
+}
+
+article img {
+  @apply cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl rounded-lg;
 }
 
 @layer utilities {
@@ -70,4 +74,13 @@ html #back-to-top {
 
 html.scrolled #back-to-top {
   @apply opacity-100 pointer-events-auto;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.image-modal-backdrop {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }

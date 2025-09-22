@@ -1,76 +1,29 @@
 ---
-title: "Astro Sphere"
-description: "Portfolio and blog build with astro."
-date: "Mar 18 2024"
-demoURL: "https://astro-sphere-demo.vercel.app"
-repoURL: "https://github.com/markhorn-dev/astro-sphere"
+title: "Fetg.uz"
+description: "A comprehensive IT services platform offering cloud telephony, DevOps automation, and business infrastructure solutions"
+date: "Apr 19 2025"
 ---
 
-![Astro Sphere Lighthouse Score](/astro-sphere.jpg)
+FETG.uz is a service hub for businesses that need modern IT without the heavy lift—cloud telephony, DevOps automation, and infrastructure management in one place. Many small and mid-sized teams were juggling vendors and tools; I built a platform that brings the essentials together with a clean, reliable experience.
 
-Astro Sphere is a static, minimalist, lightweight, lightning fast portfolio and blog theme based on my personal website.
+What I did
 
-It is primarily Astro, Tailwind and Typescript, with a very small amount of SolidJS for stateful components.
+- Led the end‑to‑end build: architecture, API, and UI with a modular monorepo
+- Implemented secure, production‑ready services (rate limits, CORS, Helmet) and error handling
+- Set up containerized deployment behind Nginx for simple, repeatable releases
 
-## 🚀 Deploy your own
+Impact
 
-<div class="flex gap-2">
-  <a target="_blank" aria-label="Deploy with Vercel" href="https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-sphere">
-    <img src="/deploy_vercel.svg" />
-  </a>
-  <a target="_blank" aria-label="Deploy with Netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-sphere">
-    <img src="/deploy_netlify.svg" />
-  </a>
-</div>
+- Faster onboarding for new clients and a single pane of glass for their IT needs
+- Call analytics and email workflows that reduce manual follow‑ups
+- A responsive, accessible UI that works well on any device
 
-## 📋 Features
+Highlights
 
-- ✅ 100/100 Lighthouse performance
-- ✅ Responsive
-- ✅ Accessible
-- ✅ SEO-friendly
-- ✅ Typesafe
-- ✅ Minimal style
-- ✅ Light/Dark Theme
-- ✅ Animated UI
-- ✅ Tailwind styling
-- ✅ Auto generated sitemap
-- ✅ Auto generated RSS Feed
-- ✅ Markdown support
-- ✅ MDX Support (components in your markdown)
-- ✅ Searchable content (posts and projects)
+- Cloud telephony with call center features and actionable analytics
+- DevOps automation from CI to deployment with predictable configurations
+- Managed infrastructure patterns that are easy to support and scale
 
-## 💯 Lighthouse score
-![Astro Sphere Lighthouse Score](/lighthouse.png)
+Tech at a glance: TypeScript across the stack, React on the front end, Node/Express on the back end, Docker + Nginx for delivery.
 
-## 🕊️ Lightweight
-All pages under 100kb (including fonts)
-
-## ⚡︎ Fast
-Rendered in ~40ms on localhost
-
-## 📄 Configuration
-
-The blog posts on the demo serve as the documentation and configuration.
-
-## 💻 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-Replace npm with your package manager of choice. `npm`, `pnpm`, `yarn`, `bun`, etc
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run sync`            | Generates TypeScript types for all Astro modules.|
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-| `npm run lint`            | Run ESLint                                       |
-| `npm run lint:fix`        | Auto-fix ESLint issues                           |
-
-## 🏛️ License
-
-MIT
+![Home](/projects/fetg/home.png)

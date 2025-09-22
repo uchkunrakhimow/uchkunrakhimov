@@ -1,79 +1,30 @@
 ---
-title: "Astro Nano"
-description: "Minimal portfolio and blog build with astro and no frameworks."
-date: "Mar 26 2024"
-demoURL: "https://astro-nano-demo.vercel.app"
-repoURL: "https://github.com/markhorn-dev/astro-nano"
+title: "Yaponamama HRCS"
+description: "Online candidate assessment platform powered by the Oxford Capacity Analysis Test algorithm"
+date: "Sep 12 2025"
+demoURL: "https://hrcs-web-production.up.railway.app"
 ---
 
-![Astro Nano](/astro-nano.png)
+Hiring decisions are hard when teams rely on gut feel. HRCS Yaponamama makes candidate assessment structured and fair. It guides candidates through a standardized personality test, tracks progress, and generates clear, professional reports for hiring managers.
 
-Astro Nano is a static, minimalist, lightweight, lightning fast portfolio and blog theme.
+What I did
 
-Built with Astro, Tailwind and Typescript, an no frameworks.
+- Designed a multi‑tenant system with roles so multiple companies can work safely in one platform
+- Built the testing engine, secure links for candidates, and real‑time progress tracking
+- Automated report generation to turn raw answers into readable insights
 
-It was designed as an even more minimal theme than my popular theme [Astro Sphere](https://github.com/markhorn-dev/astro-sphere)
+Impact
 
-## 🚀 Deploy your own
+- Faster screening for recruiters and less bias in decisions
+- Clear reports that help teams align on fit without long debriefs
+- Reliable operations across languages (RU/UZ) for a broader hiring pool
 
-<div class="flex gap-2">
-  <a target="_blank" aria-label="Deploy with Vercel" href="https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-nano">
-    <img src="/deploy_vercel.svg" />
-  </a>
-  <a target="_blank" aria-label="Deploy with Netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-nano">
-    <img src="/deploy_netlify.svg" />
-  </a>
-</div>
+Highlights
 
-## 📋 Features
+- Candidate profiles, assignments, and history in one place
+- Psychological scoring with structured PDF reports
+- Secure sessions, validation, and audit‑friendly data handling
 
-- ✅ 100/100 Lighthouse performance
-- ✅ Responsive
-- ✅ Accessible
-- ✅ SEO-friendly
-- ✅ Typesafe
-- ✅ Minimal style
-- ✅ Light/Dark Theme
-- ✅ Animated UI
-- ✅ Tailwind styling
-- ✅ Auto generated sitemap
-- ✅ Auto generated RSS Feed
-- ✅ Markdown support
-- ✅ MDX Support (components in your markdown)
+Tech at a glance: Bun + TypeScript on the back end (Elysia.js, PostgreSQL/Prisma), React on the front end, Dockerized for consistent deployments.
 
-## 💯 Lighthouse score
-![Astro Nano Lighthouse Score](/lighthouse.png)
-
-## 🕊️ Lightweight
-No frameworks or added bulk
-
-## ⚡︎ Fast
-Rendered in ~40ms on localhost
-
-## 📄 Configuration
-
-The blog posts on the demo serve as the documentation and configuration.
-
-## 💻 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-Replace npm with your package manager of choice. `npm`, `pnpm`, `yarn`, `bun`, etc
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run dev:network`     | Starts local dev server on local network         |
-| `npm run sync`            | Generates TypeScript types for all Astro modules.|
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run preview:network` | Preview build on local network                   |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-| `npm run lint`            | Run ESLint                                       |
-| `npm run lint:fix`        | Auto-fix ESLint issues                           |
-
-## 🏛️ License
-
-MIT
+![Home](/projects/hrcs/home.png)
