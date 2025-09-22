@@ -1,0 +1,16 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)\\.(css|js|mjs|woff2|woff|ttf|png|jpg|jpeg|svg|gif|webp|avif)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=600" }
+      ]
+    }
+  ]
+}
